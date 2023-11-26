@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Build a Survey Form</h1>
+    <p id="description">Objective: Build an app that is functionally similar to this</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name: <input type="text" id="name" name="text" required placeholder="Enter Your Name"/></label>
+
+        <label for="email" id="email-label">Email: <input type="email" id="email" name="email" required placeholder="Enter Your Email"/></label>
+
+      <label for="number" id="number-label">Number: <input type="number" id="number" name="number" placeholder="Enter Your Number" min="1" max="12"/></label>
+
+      <label for="dropdown">Select : 
+        <select id="dropdown">
+          <option>Choose One</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </label>
+
+      <label for="radio">
+        <input type="radio" name="radio" value="radio" id="radio"> Radio 
+      </label>
+      <label for="radio2">
+        <input type="radio" name="radio" value="radio2" id="radio2"> Radio2
+      </label>
+
+      <label for="checkbox">
+        <input type="checkbox" name="checkbox" value="checkbox" id="checkbox"/>Checkbox
+      </label>
+      <label for="checkbox2">
+        <input type="checkbox" name="checkbox2" value="checkbox" id="checkbox2"/>Checkbox2
+      </label>
+
+      <label for="textarea">TextArea:
+        <textarea name="textarea" id="textarea" placehoder="Enter the TextArea"></textarea>
+      <label>
+      <input type="submit" id="submit" />
+    </form>
+  </div>
+</body>
+</html>

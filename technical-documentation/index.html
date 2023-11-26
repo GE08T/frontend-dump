@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="nav-height">
+  <nav id="navbar">
+    <header>Dart</header>
+    <ul class="nav-mobile">
+      <li><a class="nav-link" href="#Language_Tour">Language Tour</a></li>
+      <li><a class="nav-link" href="#Effective_Dart">Effective Dart</a></li>
+      <li><a class="nav-link" href="#Library_Tour">Library Tour</a></li>
+      <li><a class="nav-link" href="#Dart_SDK">Dart SDK</a></li>
+      <li><a class="nav-link" href="#Futures">Futures</a></li>
+    </ul>
+  </nav>
+  </div>
+  <main id="main-doc">
+    <div class="overview">
+      <h1>Dart Overview</h1>
+      <p>Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks.Languages are defined by their technical envelope—the choices made during development that shape the capabilities and strengths of a language. Dart is designed for a technical envelope that is particularly suited to client development, prioritizing both development (sub-second stateful hot reload) and high-quality production experiences across a wide variety of compilation targets (web, mobile, and desktop). Dart also forms the foundation of Flutter. Dart provides the language and runtimes that power Flutter apps, but Dart also supports many core developer tasks like formatting, analyzing, and testing code.</p>
+    </div>
+    <section class="main-section" id="Language_Tour">
+      <header>Language Tour</header>
+      <li>Hello World</li>
+      <p>Every app requires the top-level main() function, where execution starts. Functions that don't explicitly
+        return a value have the void return type. To display text on the console, you can use the top-level print()
+        function:</p>
+      <code>
+        void main() { <br>
+          print('Hello, World!'); <br>
+        }
+      </code>
+      <p>Read more about the main() function in Dart, including optional parameters for command-line arguments.</p>
+    </section>
+    <section class="main-section" id="Effective_Dart">
+      <header>Effective Dart</header>
+      <code>
+        Contents<br>
+        &nbsp;The guides<br>
+        &nbsp;How to read the guides<br>
+        &nbsp;Glossary<br>
+        &nbsp;Summary of all rules<br>
+        &nbsp;&nbsp;Style<br>
+        &nbsp;&nbsp;Documentation<br>
+        &nbsp;&nbsp;Usage<br>
+        &nbsp;&nbsp;Design<br>
+      </code>
+      <p>Over the past several years, we've written a ton of Dart code and learned a lot about what works well and what doesn't. We're sharing this with you so you can write consistent, robust, fast code too. There are two overarching themes:</p>
+      <li><b>Be consistent</b>. When it comes to things like formatting, and casing, arguments about which is better are subjective and impossible to resolve. What we do know is that being consistent is objectively helpful.</li>
+      <li><b>Be brief</b>. Dart was designed to be familiar, so it inherits many of the same statements and expressions as C, Java, JavaScript and other languages. But we created Dart because there is a lot of room to improve on what those languages offer. We added a bunch of features, from string interpolation to initializing formals, to help you express your intent more simply and easily.</li>
+      <p>If there are multiple ways to say something, you should generally pick the most concise one. This is not to say you should code golf yourself into cramming a whole program into a single line. The goal is code that is economical, not dense.</p>
+    </section>
+    <section class="main-section" id="Library_Tour">
+      <header>Library Tour</header>
+      <li>Printing to the console</li>
+      <p>The top-level print() method takes a single argument (any Object) and displays that object's string value (as returned by toString()) in the console.</p>
+      <code>
+        print(anObject);<br>
+        print('I drink $tea.');
+      </code>
+      <p>For more information on basic strings and toString(), see Strings in the language tour.</p>
+    </section>
+    <section class="main-section" id="Dart_SDK">
+      <header>Dart SDK</header>
+      <code>
+        Contents<br>
+        &nbsp;What's in the Dart SDK<br>
+        &nbsp;Filling bugs and feature request<br>
+      </code>
+      <p>The Dart SDK includes a lib directory for the Dart libraries and a bin directory that has these command-line tools:</p>
+      <li>dart<br>The command-line interface for creating, formatting, analyzing, testing, documenting, compiling, and running Dart code.</li>
+      <li>dartaotruntime<br>A Dart runtime for AOT-compiled snapshots.</li>
+      <p>For more information about the SDK, see its README file.</p>
+    </section>
+    <section class="main-section" id="Futures">
+      <header>Futures</header>
+      <li>What is a future?</li>
+      <p>A future (lower case “f”) is an instance of the Future (capitalized “F”) class. A future represents the result of an asynchronous operation, and can have two states: uncompleted or completed.</p>
+      <p><b>Example: Introducing futures</b><br>
+        In the following example, fetchUserOrder() returns a future that completes after printing to the console. Because it doesn't return a usable value, fetchUserOrder() has the type Future<void>. Before you run the example, try to predict which will print first: “Large Latte” or “Fetching user order…”.</p>
+      <code>
+        Future<void> fetchUserOrder() {<br>
+        &nbsp;// Imagine that this function is fetching user info from another service or database.
+        &nbsp;return Future.delayed(const Duration(seconds: 2), () => print('Large Latte'));
+        }<br><br>
+        void main() {<br>
+        &nbsp;fetchUserOrder();
+        &nbsp;print('Fetching user order...');
+        }
+      </code>
+    </section>
+  </main>
+
+</body>
+
+</html>

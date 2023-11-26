@@ -1,0 +1,168 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body {
+    font-family: "Product Sans Light", "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+.nav-height {
+    display: block;
+    position: fixed;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    background-color: #1C2834;
+    color: #fff;
+    top: 0;
+    position: sticky;
+    padding: 10px;
+}
+
+#navbar header {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+#navbar ul {
+    margin: auto 0 auto auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    padding: 0 12px;
+}
+
+#navbar a:hover {
+    color: #36BFF9;
+}
+
+#main-doc {
+    padding: 40px 40px;
+}
+
+.overview h1 {
+    padding-top: 30px;
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#main-doc header {
+    display: block;
+    font-size: 48px;
+    padding: 15px 0;
+}
+
+#main-doc p {
+    margin: 15px 0;
+}
+
+#main-doc code {
+    display: block;
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+#Language_Tour li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+#Library_Tour li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+#Effective_Dart li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+#Dart_SDK li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+#Futures li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+@media (max-width:600px) {
+    #navbar {
+        display: block;
+        width: 100%;
+        background-color: #1C2834;
+        color: #fff;
+        top: 0;
+        position: sticky;
+    }
+
+    #navbar ul {
+        padding:  10px 0;
+        border-radius: 15px;
+        gap: 5px;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: row;
+        float: left;
+        width: 100%;
+        background-color: #121A26;
+    }
+
+    .nav-mobile ul {
+
+        margin: 10px;
+    }
+
+    .nav-mobile li {
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+
+    .nav li a {
+        padding: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 130px;
+    }
+
+    #main-doc {
+        padding-top: 100px;
+    }
+}

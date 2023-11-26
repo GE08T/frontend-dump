@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#header img {
+    height: 50px;
+}
+
+#nav-bar a {
+    font-size: 18px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    font-size: 18px;
+    margin: 0 5px;
+    text-decoration: none;  
+    transition: all ease-in 200ms;
+    border-bottom: 2px solid #fff;
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    padding: 20px 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://media.giphy.com/media/Zccj7x7HQhnIRJSpFd/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    color: #fff;
+    text-shadow: 0 0 0.3px #000;
+    justify-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 1.5px;
+}
+
+img {
+    height: 50px;
+}
