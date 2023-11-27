@@ -55,21 +55,90 @@ html {
     background-size: cover;
     background-position: center;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 .hero-content {
     color: #fff;
     text-shadow: 0 0 0.3px #000;
-    justify-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .hero h1 {
-    justify-content: center;
-    text-align: center;
+    position: relative;
+    top: -50px;
     font-size: 6rem;
     letter-spacing: 1.5px;
+}
+
+.hero h3 {
+    position: relative;
+    top: -40px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.hero button {
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    padding: 0.5rem 70px;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    background-color: #1ac173;
+}
+
+.hero button:hover {
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    padding: 0.5rem 70px;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    background-color: #54d297;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+    justify-content: center;
+}
+
+main #home {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+}
+
+#home #video {
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#home .home-desc {
+    text-align: center;
+    margin-left: 4rem;
+}
+
+#home .home-desc h1 {
+    position: relative;
+    top: -30px;
+    margin: 5px;
+}
+
+#home .home-desc p {
+    font-weight: 200;
 }
 
 img {
