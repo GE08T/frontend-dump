@@ -12,7 +12,6 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 60px;
 }
 
 #header {
@@ -26,6 +25,8 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
 }
 
 #header img {
@@ -36,7 +37,7 @@ html {
     font-size: 18px;
     margin: 0 5px;
     text-decoration: none;
-    color: #fff;
+    color: #1DBF73;
 }
 
 .nav-link:hover {
@@ -44,7 +45,7 @@ html {
     margin: 0 5px;
     text-decoration: none;  
     transition: all ease-in 200ms;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #1DBF73;
 }
 
 .hero {
@@ -83,19 +84,19 @@ html {
 
 .hero button {
     border: none;
-    font-size: large;
+    font-size: x-large;
     cursor: pointer;
     overflow: hidden;
     color: #fff;
     padding: 0.5rem 70px;
     font-weight: 600;
     border-radius: 0.25rem;
-    background-color: #1ac173;
+    background-color: #1DBF73;
 }
 
 .hero button:hover {
     border: none;
-    font-size: large;
+    font-size: x-large;
     cursor: pointer;
     overflow: hidden;
     color: #fff;
@@ -108,16 +109,18 @@ html {
 main {
     display: flex;
     flex-direction: column;
-    padding: 20px 10%;
     justify-content: center;
 }
 
-main #home {
+#home {
+    padding: 20px 10%;
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 80vh;
     width: 100%;
     align-items: center;
+    background: #E0FAEE;
+    color: #000;
 }
 
 #home #video {
@@ -139,6 +142,49 @@ main #home {
 
 #home .home-desc p {
     font-weight: 200;
+}
+
+#feature {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+    background-color: #0C5030;
+    color: #fff;
+    padding: 20px 10%;
+}
+
+#feature h1 {
+    text-align: center;
+    padding: 5rem;
+}
+
+#feature .feature-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-content img {
+    height: auto;
+    width: 30%;
+}
+
+.feature-detail {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+}
+
+.feature-detail .card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 25px;
+    height: 125px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 img {
