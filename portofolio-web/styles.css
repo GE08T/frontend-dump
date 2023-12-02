@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #121212;
+  --secondary-color: #cfcfcf;
+  --acsent-color: #406067;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Monaco', monospace;
+  font-size: 1.2em;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 5%;
+  border: 2px solid var(--secondary-color);
+  background: var(--primary-color);
+  border-radius: 40px;
+  z-index: 100;
+}
+
+.nav-link {
+  text-decoration: none;
+  width: 80%;
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  width: 80%;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 1px 1px var(--acsent-color);
+}
