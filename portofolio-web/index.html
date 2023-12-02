@@ -3,23 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portofolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav id="nav-bar">
-    <a href="#home  " class="nav-link">Home</a>
-    <a href="#feature" class="nav-link">Feature</a>
-    <a href="#reviews" class="nav-link">Reviews</a>
-    <a href="#question" class="nav-link">Feedback</a>
+  <nav id="navbar">
+    <a href="#welcome-section" class="nav-link">Home</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contacts" class="nav-link">Contacts</a>
   </nav> 
   <section id="welcome-section">
-    <h1>Who is me ?</h1>
+    <div class="welcome-main">
+      <img src="" alt="">
+      <h1>Galung Erlyan Tama</h1>
+      <p>Frontend-Developer . Data-Scientist</p>
+    </div>
+    <div class="welcome-desc">
+      <h3>Who is me ?</h3>
+      <p>My name is Galung Erlyan Tama, i'm a student of Polytechnic of Malang. i start to learn web development in 2021. and i also interest in Data Science</p>
+    </div>
   </section>
   <section id="projects">
-    <h1 class="projects-tile"></h1>
-    <a href="https://github.com/GE08T/"></a>
-    <a href="https://github.com/GE08T/" id="profile-link"></a>
+    <div class="card">
+      <div class="card-project">
+        <img src="https://picsum.photos/200" alt="">
+        <h1 class="project-tile">Laravel Crud API</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad iste laudantium quidem similique, animi quo officiis, cumque consectetur architecto vero temporibus repellat</p>
+        <button><a href="https://github.com/GE08T/" target="_blank"></a>Github</button>
+      </div>
+      <div class="card-project">
+        <img src="https://picsum.photos/200" alt="">
+        <h1 class="project-tile">Laravel Payment Gateway</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad iste laudantium quidem similique, animi quo officiis, cumque consectetur architecto vero temporibus repellat</p>
+        <button><a href="https://github.com/GE08T/" target="_blank"></a>Github</button>
+      </div>
+      <div class="card-project">
+        <img src="https://picsum.photos/200" alt="">
+        <h1 class="project-tile">Some Css Project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad iste laudantium quidem similique, animi quo officiis, cumque consectetur architecto vero temporibus repellat</p>
+        <button><a href="https://github.com/GE08T/" target="_blank"></a>Github</button>
+      </div>
+    </div>
   </section>
+  <section id="contacts">
+    <h1>Let's Talk</h1>
+    <div class="form-card">
+      <label for="email">Email : </label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="form-card">
+      <label for="message">Message : </label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+  </section>
+  <footer>
+    <i class="fa-brands fa-github"><a href="https://github.com/GE08T/" id="profile-link" target="_blank"></a></i>
+    <i class="fa-brands fa-linkedin"><a href="https://github.com/GE08T/" id="profile-link" target="_blank"></a></i>
+    <i class="fa-brands fa-instagram"><a href="https://github.com/GE08T/" id="profile-link" target="_blank"></a></i>
+    <p>Created by <a href="https://github.com/GE08T" target="_blank">GE08T</a></p>
+  </footer>
 </body>
 </html>
