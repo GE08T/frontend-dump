@@ -1,7 +1,7 @@
 :root {
   --primary-color: #121212;
   --secondary-color: #cfcfcf;
-  --acsent-color: #406067;
+  --acsent-color: #005EFB;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Monaco', monospace;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -20,29 +20,64 @@ body {
 
 #navbar {
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
+  position: sticky;
+  inset: 0;
   align-items: center;
-  padding: 10px 5%;
-  border: 2px solid var(--secondary-color);
-  background: var(--primary-color);
-  border-radius: 40px;
-  z-index: 100;
+  justify-content: center;
+  z-index: 1;
+}
+
+.navbar-main {
+  display: flex;
+  padding: 20px 5%;
+  gap: 2rem;
+  width: 75%;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 3px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 0 0 30px 30px;
 }
 
 .nav-link {
   text-decoration: none;
+  padding: 5px;
   width: 80%;
   color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
 }
 
 .nav-link:hover {
-  text-decoration: none;
-  width: 80%;
-  color: var(--secondary-color);
-  text-shadow: 1px 1px 1px 1px var(--acsent-color);
+  transition:  500ms;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+#welcome-section {
+  position: relative;
+  top: -20px;
+  height: 100vh;
+  width: 100%;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  z-index: 0;
+}
+
+.welcome-main img {
+  width: 300px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.welcome-main {
+  text-align: center;
 }
