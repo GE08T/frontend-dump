@@ -18,6 +18,10 @@ body {
   color: var(--secondary-color);
 }
 
+html {
+  /* overflow-x: hidden; */
+}
+
 #navbar {
   display: flex;
   position: sticky;
@@ -29,6 +33,7 @@ body {
 
 .navbar-main {
   display: flex;
+  position: sticky;
   padding: 20px 5%;
   gap: 2rem;
   width: 75%;
@@ -50,6 +55,7 @@ body {
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 15px;
+  list-style: none;
 }
 
 .nav-link:hover {
@@ -59,25 +65,131 @@ body {
 }
 
 #welcome-section {
-  position: relative;
-  top: -20px;
-  height: 100vh;
+  height: 91vh;
   width: 100%;
   padding: 0 10%;
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 5rem;
   z-index: 0;
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+.welcome-main {
+  border: 2px dashed var(--secondary-color);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
 }
 
 .welcome-main img {
   width: 300px;
   height: auto;
-  border-radius: 100%;
+  border-radius: 15px;
+  margin-bottom: 30px;
 }
 
-.welcome-main {
+.welcome-main h1 {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+}
+
+.welcome-desc {
+  padding: 15px;
+  border: 2px dashed var(--secondary-color);
+}
+
+.welcome-desc h1 {
+  padding: 10px;
+  border: 2px dashed var(--secondary-color) ;
   text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.welcome-desc li {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+#skills {
+  height: 50vh;
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  z-index: -1;
+}
+
+#skills h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.card-skill span{
+  font-size: 5em;
+  margin: 20px;
+}
+
+#projects {
+  height: 100vh;
+  width: 100%;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content : center;
+}
+
+#projects > h1 {
+  font-size: 2.5em;
+  margin: 90px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4em;
+}
+
+.card-project {
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-project img {
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card-project > h1 , p{
+  margin: 20px 0;
+  text-align: left;
+}
+
+#contacts {
+  height: 100vh;
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
