@@ -1,4 +1,4 @@
-## This Repo is stand to practice css or js
+## This Repo is stand to practice css vanilla or framework
 ### List of CSS Project: 
 1. Landing Page **Finished**
 2. QR Code **Finished**
