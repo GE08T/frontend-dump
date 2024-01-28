@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  padding: 2rem;
+  background-color: blueviolet;
+  color: antiquewhite;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+#tittle {
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid antiquewhite;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 15px;
+}
+
+#heading {
+  margin-bottom: 3rem;
+}
+
+button {
+  color: antiquewhite;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border: 2px solid antiquewhite;
+  border-radius: 15px;
+}
+
+.reveal {
+  margin-top: 3rem;
+}
+
+.box {
+  border: 2px solid antiquewhite;
+  margin-block: 2rem;
+}
+
+.reveal-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.reveal-btn {
+  display: block;
+}

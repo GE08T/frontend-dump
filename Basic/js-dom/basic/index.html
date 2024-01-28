@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
   <!-- <main id="selector">
@@ -22,15 +23,36 @@
     </ul>
   </main>  -->
 
-  <section class="traverse">
+  <!-- <section class="traverse">
     <h1 class="tittle">Ucapan Selamat</h1>
     <ul>
       <li class="list-items">Halo</li>
       <li class="list-items">Kamu</li>
       <li class="list-items">Lagi</li>
-      <li class="list-items">Apa</li>
     </ul>
+  </section> -->
+
+  <section class="event-listener">
+    <h1 id="tittle">Event Listener</h1>
+    <div class="container">
+      <div class="card card-1">
+        <h1 id="heading">Example 1</h1>
+        <button class="btn-1" onclick="alert('Hello World')">Enter</button>
+      </div>
+      <div class="card card-2">
+        <h1 id="heading">Example 2</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="card card-3">
+        <h1 id="heading">Example 3</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+    </div>
+    <div class="card reveal">
+      <button class="box reveal-btn">Reveal</button>
+      <p class="card hidden-content reveal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quas.</p>
+    </div>
   </section>
-  <script src="./src/traverse.js"></script>
+  <script src="./src/event-listener.js"></script>
 </body>
 </html>
