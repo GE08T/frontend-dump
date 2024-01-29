@@ -12,3 +12,8 @@
 // jika sudah di temukan maka akan menyeleksi target yang kemudian akan di kembalikan ulang / di telusuri ulang kembali ke window dengan event bubbling
 
 // ? method yang berguna dalam event probagation adalah stopPropagation dan preventDefault 
+
+// ? kode di bawah ini adalah menggunakan parameter e untuk event dan menggunakan method target untuk menyeleksi target dan menghapus event listener yang telah di seleksi
+// document.querySelector('').addEventListener('click', (e) => {
+//   e.target.removeEventListener
+// })
