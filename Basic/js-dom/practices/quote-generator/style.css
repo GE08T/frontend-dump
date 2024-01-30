@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 350px;
+  height: 450px;
   width: 750px;
   text-align: center;
   padding: 1rem;
@@ -35,6 +35,8 @@ body {
 }
 
 .main-content {
+  display: grid;
+  place-items: center;
   height: 100%;
   margin-top: 1rem;
   letter-spacing: 1.5px;
