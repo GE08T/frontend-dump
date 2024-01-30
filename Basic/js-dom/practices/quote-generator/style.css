@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2b2828;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/ cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 750px;
+  text-align: center;
+  padding: 1rem;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  box-shadow: 3px 10px 15px -1px rgba(43, 40, 40, 1);
+}
+
+.header {
+  background-color: #2b2828;
+  color: antiquewhite;
+  padding: .5rem;
+}
+
+.main-content {
+  height: 100%;
+  margin-top: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.main-content .quote-wrapper {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+} 
+
+.main-content .person {
+  margin-top: 2rem;
+}
+
+.button-wrapper button {
+  margin-top: 2rem;
+  padding: 10px 15px;
+  background-color: #2b2828;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 8px 0px -3px #939191;
+}
+
+.button-wrapper button:active, button:hover {
+  background-color: #c6c3c3;
+  color: #2b2828;
+  box-shadow: 5px 10px 0px -3px #2b2828;
+}
