@@ -1,0 +1,72 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#container {
+  display: flex;
+  background: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+#open-modal {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: .5rem;
+  top: 80%;
+  left: 10%;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  border-radius: 8px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#open-modal:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+#modal-container {
+  position: inherit;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45em;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+#modal .modal-content {
+  margin-top: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper #close-modal {
+  font-size: 2rem;
+  cursor: pointer;
+  color: darkred;
+}
