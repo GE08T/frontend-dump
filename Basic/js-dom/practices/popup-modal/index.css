@@ -97,3 +97,31 @@ body {
 		scale(1);
 	}
 }
+
+
+@media (max-width: 720px) {
+  #modal {
+    width: 35em;
+  }
+
+  #open-modal {
+    width: 150px;
+    height: 40px;
+  }
+
+  #open-modal > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  #modal {
+    width: 25em;
+  }
+}
+
+@media (max-width: 450px) {
+  #modal {
+    width: 18em;
+  }
+}
