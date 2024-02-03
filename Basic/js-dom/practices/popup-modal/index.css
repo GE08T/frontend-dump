@@ -54,6 +54,9 @@ body {
   padding: 2rem;
   border-radius: 10px;
   background-color: antiquewhite;
+
+  animation: modalAnimate;
+  animation-duration: .5s;
 }
 
 #modal .modal-content {
@@ -70,4 +73,27 @@ body {
   font-size: 2rem;
   cursor: pointer;
   color: darkred;
+}
+
+@keyframes modalAnimate {
+  0% {
+		transform: translate(-50%, -50%)
+		scale(.7);
+
+		opacity: 0;
+	}
+	45% {
+		transform: translate(-50%, -50%)
+		scale(1.05);
+
+		opacity: 1;
+	}
+	80% {
+		transform: translate(-50%, -50%)
+		scale(.95);
+	}
+	100% {
+		transform: translate(-50%, -50%)
+		scale(1);
+	}
 }
