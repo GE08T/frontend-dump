@@ -1,0 +1,50 @@
+/*
+  background : https://img.freepik.com/free-photo/interior-design-with-decorative-plant_23-2149551359.jpg?w=900&t=st=1708090904~exp=1708091504~hmac=09d6c2a68446eb39ee342ae028b24b15f3d74739118e89a21ad68c1f75f1ae02
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+section {
+  background: url(https://img.freepik.com/free-photo/interior-design-with-decorative-plant_23-2149551359.jpg?w=900&t=st=1708090904~exp=1708091504~hmac=09d6c2a68446eb39ee342ae028b24b15f3d74739118e89a21ad68c1f75f1ae02) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-todo-container {
+  width: min(70%, 450px);
+  padding: 15px;
+  background-color: aliceblue;
+  border-radius: 18px;
+  display: flex;
+}
+
+.add-todo-container #task {
+  flex: 5;
+  width: 75%;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+  border: 2px solid ;
+  border-radius: 15px;
+  margin-right: 8px;
+}
+
+.add-todo-container #add-task {
+  flex: 1;
+  width: 20%;
+  padding: 5px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
