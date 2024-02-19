@@ -6,7 +6,7 @@ const taskContainer = document.getElementById('task-container')
 
 addTask.addEventListener('click', () => {
 
-  let task = document.createElement('ul')
+  let task = document.createElement('li')
   task.classList.add('task')
   
   let listTask = document.createElement('p')
@@ -24,4 +24,13 @@ addTask.addEventListener('click', () => {
   task.appendChild(deleteButton)
   
   taskContainer.appendChild(task)
+
+  checkButton.addEventListener('click', () => {
+    checkButton.parentElement.style.textDecoration = "line-through"
+  })
+
+  deleteButton.addEventListener('click', (e) => {
+    let target = e.target
+    target.parentElement.parentElement.remove()
+  })
 })
